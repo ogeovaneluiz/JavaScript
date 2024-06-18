@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro código JS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: blueviolet;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            text-align: center;
+
+        }
+        h1{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá! </h1>
+    <p>Vamos para a prática</p>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número'))/*Parse int número inteiro, parsefloat número com virgula*/
+        var n2 = Number(window.prompt('Digite outro númro'))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+
+</body>
+</html>
