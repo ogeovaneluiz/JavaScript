@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        body{
+            background-color: blueviolet;
+
+        }
+        div#caixa{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="caixa" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">Interaja</div>
+
+    <script>
+        function clicou() { 
+            var a = window.document.getElementById("caixa");
+            a.innerText = "clicou!";
+        }
+        function entrou(){
+            var b = window.document.getElementById("caixa")
+            b.innerText = "Entrou!"
+        }
+        function saiu(){
+            var c = window.document.getElementById("caixa")
+            c.innerText = "Saiu!"
+        }
+        
+
+    </script>
+</body>
+</html>

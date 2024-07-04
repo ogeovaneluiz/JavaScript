@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        div#clique{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="clique" onclick="clicar()" onmouseenter="entrei()" onmouseout="sair()"> Aperte no botão</div>
+
+    <script>
+        function clicar(){
+           var a = window.document.getElementById("clique");
+           a.innerText = "clicou!"
+         a.style.backgroundColor = "red"
+        }
+
+        function entrei(){
+            var b = window.document.getElementById("clique");
+            b.innerText = "Entrou"
+        }
+        function sair(){
+            var c = window.document.getElementById("clique");
+            c.innerText = "Saiu"
+  
+        }
+    </script>
+
+</script>
+</body>
+</html>
