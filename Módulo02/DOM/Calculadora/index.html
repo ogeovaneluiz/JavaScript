@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de adição</h1>
+    <input type="number" name="numero1" id="numero1">x
+    <input type="number" name="numero2" id="numero2">
+    <input type="button" value="Calcular" onclick="soma()">
+    <div id="res">Resultado</div>
+    
+    <script>
+
+        function soma(){
+        var num1 = window.document.getElementById("numero1")
+        var num2 = window.document.getElementById("numero2")
+        var res = window.document.getElementById("res")
+
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var resu = n1 * n2
+
+        res.innerText = `O resultado da sua equação é de ${resu}!`
+    }
+
+    </script>
+
+
+</body>
+</html>
