@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Em qual país você mora?</h1>
+
+    <input type="text" name="textolocal" id="textolocal">
+    <input type="button" value="Enviar" onclick="resultado()">
+    <div id="res">Resultado vai aparecer aqui</div>
+    
+    <script>
+    function resultado() {
+        var local = document.getElementById("textolocal").value;
+        var res = document.getElementById("res");
+    
+        if (local === "Brasil") {
+            res.innerHTML = "Você é brasileiro";
+        } else {
+            res.innerHTML = "Você é estrangeiro";
+        }
+    }
+</script>
+
+
+
+    
+</body>
+</html>
