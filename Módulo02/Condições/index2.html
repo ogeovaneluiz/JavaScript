@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiro</title>
+</head>
+<body>
+    <h1>Você tem quantos anos?</h1>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Enviar" onclick="verificarIdade()">
+    <div id="res"><p>Resultado vai aparecer aqui</p></div>
+    
+    <script>
+        function verificarIdade() {
+            var ida = document.getElementById("idade").value
+            var resu = document.getElementById("res")
+
+            var nida = Number(ida)
+
+            if (nida >= 18) {
+                resu.innerHTML = "Você é maior de idade"
+            } else {
+                resu.innerHTML = "Você é menor de idade"
+            }
+        }
+    </script>
+</body>
+</html>

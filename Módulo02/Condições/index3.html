@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom dia, tarde, noite</title>
+</head>
+<body>
+
+    <h1>Quantas horas são?</h1>
+    <input type="number" name="horas" id="horas">
+    <input type="button" value="Enviar" onclick="ativar()">
+    <div id="tenha"></div>   
+    
+    <script>
+        function ativar(){
+            var hrs = window.document.getElementById("horas").value
+            var env = window.document.getElementById("Enviar")
+            var ter = window.document.getElementById("tenha")
+
+            var nhrs = Number(hrs) 
+
+            if (nhrs <= 5){
+                ter.innerHTML = "Tenha um ótimo madrugadaa"
+
+            }
+            else if (nhrs <= 12){
+                ter.innerHTML = "Tenha uma boa dia"
+
+                
+            }
+            else if ( nhrs <= 18){
+                ter.innerHTML = "Tenha uma boa tarde"
+
+            }
+         else if (nhrs <24) {
+                ter.innerHTML = "Tenha uma boa noite";
+            }
+
+        }
+    </script>
+</body>
+</html>
